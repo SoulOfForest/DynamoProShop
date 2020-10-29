@@ -62,7 +62,6 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(path.resolve(), '/frontend/build')));
 
     app.get('*', (req, res) => {
-        console.log('send-back');
         res.sendFile(path.join(path.resolve(), '/frontend/build/index.html'))
     })
 } 
