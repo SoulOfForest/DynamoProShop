@@ -144,7 +144,7 @@ module.exports.getAllOrders = asyncHandler(async (req, res) => {
 
     const orders = await Order.find({}).populate('user', '_id name').limit(PAGE_SIZE).skip(PAGE_SIZE * (page - 1));;
 
-    const totalProducts = await Product.countDocuments({});
+    const totalProducts = await Order.countDocuments({});
 
     const pages = Math.ceil(totalProducts / PAGE_SIZE);
 
