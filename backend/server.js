@@ -27,7 +27,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 // Set up for cors
 const corsOptions = {
-    origin: 'http://localhost:3000',
     credentials: true // allows cookies (or other user credentials) to be included on cross-origin requests.
 };
 
