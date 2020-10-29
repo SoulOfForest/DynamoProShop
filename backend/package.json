@@ -7,8 +7,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "colors": "^1.4.0"
-  }
+  "dependencies": {}
 }
